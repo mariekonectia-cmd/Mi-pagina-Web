@@ -1,0 +1,42 @@
+/* Estilo general para ver el fondo */
+body {
+    margin: 0;
+    background-color: #ffffff; /* Fondo blanco para que la onda se fusione */
+    font-family: Arial, sans-serif;
+}
+
+/* El cuadro azul con tus especificaciones */
+.cabecera-azul {
+    background: linear-gradient(to right, #00aff0, #0078d7); /* Azul Skype */
+    color: white;
+    padding: 20px; /* Tu requisito */
+    border-radius: 10px; /* Tu requisito */
+    padding-bottom: 100px; /* Espacio para que la onda no tape el texto */
+    position: relative;
+    overflow: hidden; /* Corta el contenido que se salga de los bordes redondeados */
+    text-align: center;
+}
+
+/* Posicionamiento de la onda blanca */
+.onda-svg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    line-height: 0;
+    transform: rotate(180deg); /* La giramos para que esté abajo */
+}
+
+.onda-svg svg {
+    width: 100%;
+    height: 80px;
+}
+
+.relleno-blanco {
+    fill: #ffffff; /* Debe ser igual al color del body para que parezca una onda */
+}
+.logo-principal {
+    width: 400px; /* Ajusta el ancho a 100 píxeles */
+    height: auto;  /* Mantiene la proporción de la imagen */
+    margin-bottom: 20px; /* Separa un poco el logo del título */
+}
